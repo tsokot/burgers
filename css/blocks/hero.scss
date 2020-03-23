@@ -1,0 +1,64 @@
+.hero {
+  background: url("../img/texture.png") center center / cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero__desc {
+  font-size: rem(65px);
+  @include lifehack();
+  line-height: 1.1;
+  margin-bottom: 0;
+
+  @include laptop {
+    font-size: rem(60px);
+  }
+
+  @include tablets {
+    font-size: rem(40px);
+    text-align: center;
+    }
+
+    @include phones {
+      font-size: rem(38px);
+      }
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex: .8;
+  width: 100%;
+  max-width: 940px;
+  @include tablets {
+    flex-direction: column;
+    }
+}
+
+.hero__image{
+  margin-right: rem(30px);
+  flex-shrink: 0;
+
+  @include tablets {
+    margin-right: 0;
+    width: 65%;
+    }
+}
+
+.hero__text {
+  width: 50%;
+  padding-top: rem(60px);
+
+  @include tablets {
+    padding-top: rem(15px);
+    width: 90%;
+    }
+}

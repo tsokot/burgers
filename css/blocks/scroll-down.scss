@@ -1,0 +1,14 @@
+.scroll__down{
+  display: inline-flex;
+  height: rem(14px);
+  width: rem(29px);
+  bottom: rem(40px);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: rem(50px);
+}
+
+.down{
+  width: rem(29px);
+  height: rem(15px);
+}

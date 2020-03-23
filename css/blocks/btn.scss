@@ -1,0 +1,30 @@
+.btn {
+  background: $red;
+  @include ubuntu(medium);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: rem(5px);
+  font-size: rem(13px);
+  display: inline-block;
+  padding: rem(10px) rem(15px);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn__desctop {
+  @include phones {
+    display: none;
+  }
+}
+
+.btn__mobile {
+  display: none;
+
+  @include phones {
+    display: inline-block;
+  }
+}
+
+.button_bg_red {
+  background: $red;
+}

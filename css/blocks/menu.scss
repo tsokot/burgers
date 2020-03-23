@@ -1,0 +1,94 @@
+.menu {
+	background: url('../img/menu-bg.png') 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+  justify-content: flex-end;
+}
+
+.menu__title {
+	position: absolute;
+	top: 10%;
+	left: 3%;
+}
+
+.menu-acco {
+	display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-acco__item {
+	display: flex;
+	height: 100%;
+
+	&.active {
+
+		.menu-acco__content{
+			width: rem(500px);
+
+			@include laptop {
+				width: rem(320px);
+			}
+
+		}
+		.menu-acco__trigger-text {
+			color: $yellow;
+		}
+	}
+}
+
+.menu-acco__trigger {
+	width: rem(65px);
+	display: block;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+  position: relative;
+	
+	@include tablets {
+    width: rem(55px);
+  }
+
+  @include phones {
+    width: rem(45px);
+  }
+}
+
+.menu-acco__trigger-text {
+	font-size: rem(40px);
+	color: #fff;
+	@include gagalin;
+	text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: rem(-20px);
+
+}
+
+.menu-acco__content {
+	height: 100%;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-acco__text {
+	@include ubuntu(light);
+	font-size: rem(14px);
+	color: #fff;
+	padding: rem(40px) rem(30px);
+	width: 100%;
+  line-height: 1.8;
+
+  @include phones {
+		font-size: rem(14px);
+    padding: rem(25px) rem(15px);
+  }
+}

@@ -1,0 +1,35 @@
+.reviews {
+  background: black;
+  height: 100vh;
+  min-height: rem(650px);
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+  @include tablets {
+    height: 25%;
+    width: 50%;
+  }
+}
+
+.meat {
+ width: rem(97px);
+ height: rem(90px);
+}
+
+.hand {
+  width: rem(73px);
+  height: rem(86px);
+}
+
+.leaf {
+  width: rem(88px);
+  height: rem(76px);
+}

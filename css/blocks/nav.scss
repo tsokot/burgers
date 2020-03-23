@@ -1,0 +1,48 @@
+$itemsMargin: rem(13px);
+
+
+.nav__list {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+	display: none;
+  }
+}
+
+
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  margin-left: $itemsMargin;
+
+  &:before {
+    content: "";
+    display: block;
+    width: rem(4px);
+    height: rem(4px);
+    border-radius: 50%;
+    background: currentColor;
+    margin-right: $itemsMargin;
+  }
+
+  &:first-child {
+    margin-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: rem(13px);
+  @include ubuntu(medium);
+
+  @include laptop {
+    font-size: 0.7725rem;
+  }
+}

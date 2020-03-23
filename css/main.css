@@ -752,7 +752,8 @@ img {
   filter: grayscale(100%); }
   .review:hover .review__hover {
     opacity: 1;
-    transform: scale(1); }
+    transform: scale(1);
+    background-color: #3d3d3dcb; }
 
 .review__img-wrapper {
   position: absolute;
@@ -1513,11 +1514,11 @@ img {
   justify-content: space-between; }
 
 .slider__page-prev {
-  background: url(../../img/prev.png) no-repeat;
+  background: url(../img/prev.png) no-repeat;
   left: -15px; }
 
 .slider__page-next {
-  background: url(../../img/next.png) no-repeat;
+  background: url(../img/next.png) no-repeat;
   right: -15px; }
 
 .slider__page-prev, .slider__page-next {

@@ -4,9 +4,11 @@
   filter: grayscale(100%);
 
   &:hover {
+    
     .review__hover {
       opacity: 1;
       transform: scale(1);
+      background-color: #3d3d3dcb;
     }
   }
 }

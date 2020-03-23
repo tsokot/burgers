@@ -1455,6 +1455,8 @@ img {
   margin-bottom: 10px;
   justify-content: space-around;
   align-items: center; }
+  .composition__item:last-child {
+    margin-bottom: 0; }
 
 .composition__icon {
   height: 65px;

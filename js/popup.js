@@ -17,6 +17,7 @@ function popupReview(){
     const popup = document.querySelector('.popup');
 
     popup.classList.add('popup--active');
+    body.classList.add('body--active-menu');
 
     popup.querySelector('.popup__title').textContent = title;
     popup.querySelector('.popup__text').textContent = text;
@@ -25,6 +26,7 @@ function popupReview(){
       e.preventDefault();
 
       popup.classList.remove('popup--active');
+      body.classList.remove('body--active-menu');
     })
   }
 }

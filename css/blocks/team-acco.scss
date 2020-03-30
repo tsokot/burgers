@@ -4,6 +4,14 @@
 	}
 }
 
+.team-acco__content-wrapp {
+	display: flex;
+
+		@include tablets {
+			flex-wrap: wrap;
+		}
+}
+
 .team-acco__item {
   margin-bottom: rem(20px);
   
@@ -15,11 +23,12 @@
 		margin-bottom: 0;
 	}
 
-	&.active {
+	&.team__active {
 
 		.team-acco__content{
 			height: 100%;
-			flex-wrap: wrap;
+		
+			
 		}
 
 		.team-acco__trigger {
@@ -83,9 +92,9 @@
 }
 
 .team-acco__content {
-	display: flex;
 	overflow: hidden;
 	height: 0;
+	transition: .8s;
 
 	@include tablets {
 		padding: 0 10%;

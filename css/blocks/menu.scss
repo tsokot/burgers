@@ -22,11 +22,16 @@
 	display: flex;
 	height: 100%;
 
-	&.active {
+	&.menu-acco__item-active {
 
 		.menu-acco__content{
 			width: rem(500px);
 
+			.menu-acco__text{
+				opacity: 1;
+				transition-delay: .5s;
+			}
+		
 			@include laptop {
 				width: rem(320px);
 			}
@@ -68,8 +73,7 @@
   transform-origin: 0 0;
   left: 50%;
   top: 100%;
-  margin-top: rem(-20px);
-
+	margin-top: rem(-20px);
 }
 
 .menu-acco__content {
@@ -77,6 +81,7 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+	transition: .5s;
 }
 
 .menu-acco__text {
@@ -85,7 +90,8 @@
 	color: #fff;
 	padding: rem(40px) rem(30px);
 	width: 100%;
-  line-height: 1.8;
+	line-height: 1.8;
+	opacity: 0;
 
   @include phones {
 		font-size: rem(14px);

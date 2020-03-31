@@ -22,12 +22,6 @@ send.addEventListener("click", event =>{
     event.preventDefault();
 
     if(!validateForm(myForm)){
-        // const data = {
-        //     name : myForm.elements.name.value,
-        //     phone : myForm.elements.phone.value,
-        //     comment : myForm.elements.comment.value,
-        //     to :'my@mail.com'
-        // };
 
         var formData = new FormData(myForm);
         formData.append('to', 'my@mail.com');
@@ -35,12 +29,25 @@ send.addEventListener("click", event =>{
 
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send(JSON.stringify(formData));
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/');
+        xhr.send(formData);
         xhr.addEventListener('load', () => {
          
-          console.log(xhr.response);
-         
+              console.log(xhr.response.message);
+
+              const popup = document.querySelector('.popup');
+              popup.classList.add('popup--active');
+              body.classList.add('body--active-menu');
+          
+              popup.querySelector('.popup__title').textContent = xhr.response.message;
+          
+              popup.querySelector('.popup__close').addEventListener('click' , e=>{
+                e.preventDefault();
+          
+                popup.classList.remove('popup--active');
+                body.classList.remove('body--active-menu');
+              })
+
           });
     }
 });

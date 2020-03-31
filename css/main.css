@@ -769,9 +769,9 @@ img {
     visibility: visible; }
 
 .popup__display {
-  background: black;
-  width: 500px;
-  height: 250px;
+  background: #3b3b3b;
+  width: 25rem;
+  height: 15.625rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -783,7 +783,7 @@ img {
   flex-direction: column; }
   @media screen and (max-width: 768px) {
     .popup__display {
-      width: 400px; } }
+      width: 335px; } }
 
 .popup__close {
   position: absolute;

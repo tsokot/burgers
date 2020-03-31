@@ -27,6 +27,9 @@ function popupReview(){
 
       popup.classList.remove('popup--active');
       body.classList.remove('body--active-menu');
+
+      popup.querySelector('.popup__title').textContent = '';
+      popup.querySelector('.popup__text').textContent = '';
     })
   }
 }

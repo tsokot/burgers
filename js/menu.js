@@ -10,11 +10,6 @@ function accordionMenu(){
   const contentDef = 500;
  
 
-console.log(workers.length);
-console.log(contentWidth);
-console.log(closeMenuWidth);
-
-
   teamAccord.addEventListener("click" , function(event){
       event.preventDefault(); // скидываем стандартное состояние (что бы не кидало страницу вверх / или не перенаправляло на другую)
       const target = event.target; // то на что мы клацнули

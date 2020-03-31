@@ -496,7 +496,7 @@
                 </div>
               </div>
             </li>
-            <li class="team-acco__item team__active">
+            <li class="team-acco__item">
               <a class="team-acco__trigger" href="#">Ричард джеймс</a>
               <div class="team-acco__content">
                 <div class="team-acco__content-wrapp">
@@ -553,7 +553,8 @@
               </div>
             </div>
           </li>
-          <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/menu-bg-2.png')">
+          <li class="menu-acco__item">
+            <a class="menu-acco__trigger" href="#" style="background-image: url('./img/menu-bg-2.png')">
               <div class="menu-acco__trigger-text">Вегетарианское</div></a>
             <div class="menu-acco__content">
               <div class="menu-acco__text">
@@ -562,7 +563,8 @@
               </div>
             </div>
           </li>
-          <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/menu-bg-3.png')">
+          <li class="menu-acco__item">
+            <a class="menu-acco__trigger" href="#" style="background-image: url('./img/menu-bg-3.png')">
               <div class="menu-acco__trigger-text">Диетическое</div></a>
             <div class="menu-acco__content">
               <div class="menu-acco__text">
@@ -741,11 +743,13 @@
                 <div class="order__form-row order__form-row_double">
                   <label class="order__form-block">
                     <div class="order__form-label">Имя</div>
-                    <input class="order__form-input" name="name" type="text" placeholder="">
+                    <input class="order__form-input" name="name" type="text" placeholder="" required>
+                    <div class="error"></div>
                   </label>
                   <label class="order__form-block">
                     <div class="order__form-label">Телефон</div>
-                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="" required>
+                    <div class="error"></div>
                   </label>
                 </div>
                 <div class="order__form-row">
@@ -777,7 +781,8 @@
                 <div class="order__form-row">
                   <label class="order__form-block">
                     <div class="order__form-label">Комментарий</div>
-                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment" required></textarea>
+                    <div class="error"></div>
                   </label>
                 </div>
                 <div class="order__form-buttons">
@@ -801,7 +806,7 @@
                     </label>
                   </div>
                   <div class="order__form-row">
-                    <input class="order__form-button" name="" type="submit" value="Заказать">
+                    <input class="order__form-button order__form-button_send" name="" type="submit" value="Заказать">
                     <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
                   </div>
                 </div>
@@ -901,7 +906,7 @@
         <div class="popup__text">Тестовый text</div>
       </div>
     </div>
-    
+
 
   </div>
   <script src="./js/dropmenu.js"></script>
@@ -909,5 +914,6 @@
   <script src="./js/menu.js"></script>
   <script src="./js/popup.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

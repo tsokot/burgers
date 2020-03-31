@@ -1195,6 +1195,9 @@ img {
   text-transform: none;
   background: transparent; }
 
+.error {
+  color: #e35028; }
+
 .map {
   position: relative; }
 

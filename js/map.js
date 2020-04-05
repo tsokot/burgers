@@ -35,17 +35,13 @@ function init(){
       },
       {
           iconLayout:'default#image',
-          iconImageHref:'/img/map-marker.svg',
+          iconImageHref:'./img/map-marker.svg',
           iconImageSize:[46,57]
 
       });
       myMap.geoObjects.add(myPlacemark);
   });
-  // myMap.controls.remove('geolocationControl');
-  // myMap.controls.remove('searchControl)');
-  // myMap.controls.remove('trafficControl');
-  // myMap.controls.remove('typeSelector');
-  // myMap.controls.remove('fullscreenControl');
+
   var zoomControl = new ymaps.control.ZoomControl({
     options: {
         size: "large"

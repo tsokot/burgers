@@ -735,6 +735,30 @@
           </li>
         </ul>
       </section>
+
+      <section class="video">
+        <div class="video__container">
+          <div class="section__title section__title--centered section__title--color--black">Как мы работаем</div>
+          <div class="video__player">
+              <video id="video" poster="./img/player-bg.png">
+                  <source src="./video/video.mp4" type="video/mp4">
+              </video>
+              <img src="./img/play-white.png" alt="Icon" class="play video__play">
+          </div>
+          <div class="video__toolbar">
+              <div class="duration">
+                  <img src="./img/play.png" alt="Icon" class="duration__icon play">
+                  <input type="range" class="duration__length" id="durationLevel" min="0">
+              </div>
+              <div class="sound">
+                  <img src="./img/sound-icon.png" alt="Icon" class="sound__img" id="micLevel">
+                  <div class="sound__volume">
+                      <input type="range" class="duration__length duration__length--other" id="volumeLevel" min="0" max="10">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
   
       <section class="section order">
         <div class="order__container">
@@ -911,7 +935,8 @@
 
 
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8a0854ee-3832-44b1-8ebc-5678c65bb992&lang=ru_RU"></script>
   <script src="./js/map.js"></script>
   <script src="./js/dropmenu.js"></script>
   <script src="./js/team.js"></script>
@@ -919,5 +944,6 @@
   <script src="./js/popup.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/form.js"></script>
+  <script src="./js/video.js"></script>
 </body>
 </html>

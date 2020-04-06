@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <div class="main">
-      <section class="section hero">
+      <section class="section hero page">
         <div class="hero__container">
           <header class="header">
             <div class="header__logo">
@@ -25,18 +25,18 @@
             <div class="header__nav">
               <nav class="nav">
                 <ul class="nav__list">
-                  <li class="nav__item"> <a href="#" class="nav__link">О нас</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Бургеры</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Команда</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Меню</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Отзывы</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Как мы работаем</a> </li>
-                  <li class="nav__item"> <a href="#" class="nav__link">Контакты</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="1">О нас</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="2">Бургеры</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="3">Команда</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="4">Меню</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="5">Отзывы</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="6">Как мы работаем</a> </li>
+                  <li class="nav__item"> <a href="#" class="nav__link" data-scroll-to="8">Контакты</a> </li>
                 </ul>
               </nav>
             </div>
             <div class="header_btn">
-              <a href="#" class="btn">Заказать</a>
+              <a href="#" class="btn" data-scroll-to="7">Заказать</a>
             </div>
           </header>
           <div class="hero__content">
@@ -48,7 +48,7 @@
                 <h3 class="hero__desc">натуральные бургеры</h3>
               </div>
             </div>
-              <a href="#" class="scroll__down">
+              <a href="#" class="scroll__down" data-scroll-to="1">
                 <svg class="down">
                   <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
                 </svg>
@@ -56,7 +56,7 @@
           </div>
       </section>
   
-      <section class="section best">
+      <section class="section best page">
         <div class="best__container">
           <div class="section__title section__title--centered section__title--color--black">Мы лучшие</div>
           <div class="best__advantares">
@@ -106,7 +106,7 @@
         </div>
       </section>
 
-      <section class="section burger">
+      <section class="section burger page">
         <div class="burger__wrapper">
           <div class="burger__container">
             <div class="slider">
@@ -480,7 +480,7 @@
         </div>
 			</section>
   
-      <section class="section team">
+      <section class="section team page">
         <div class="team__section">
           <div class="section__title">Команда</div>
           <ul class="team-acco">
@@ -542,7 +542,7 @@
         </div>
       </section>
   
-      <section class="section menu">
+      <section class="section menu page">
         <div class="section__title section__title--color--white menu__title">Меню</div>
         <ul class="menu-acco">
           <li class="menu-acco__item">
@@ -578,7 +578,7 @@
         </ul>
       </section>
   
-      <section class="reviews">
+      <section class="reviews page">
         <ul class="reviews__list">
           <li class="reviews__item review">
             <div class="review__img-wrapper">
@@ -736,7 +736,7 @@
         </ul>
       </section>
 
-      <section class="video">
+      <section class="video page">
         <div class="video__container">
           <div class="section__title section__title--centered section__title--color--black">Как мы работаем</div>
           <div class="video__player">
@@ -760,7 +760,7 @@
         </div>
       </section>
   
-      <section class="section order">
+      <section class="section order page">
         <div class="order__container">
           <div class="section__title">Закажите доставку</div>
           <div class="order__form">
@@ -842,7 +842,7 @@
         </div>
       </section>
   
-      <section class="section map">
+      <section class="section map page">
         <div class="yandex-map" id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -875,7 +875,7 @@
     </div>
 
     
-    <div class="burgermenu" id="burgermenu">
+    <div class="burgermenu" id="burgermenu" >
       <span class="burgermenu__line"></span>
       <span class="burgermenu__line"></span>
       <span class="burgermenu__line"></span>
@@ -933,11 +933,42 @@
       </div>
     </div>
 
+    <div class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item is-active">
+          <a href="#" class="pagination__link" data-scroll-to="0"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="1"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="2"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="3"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="4"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="5"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="6"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="7"></a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link" data-scroll-to="8"></a>
+        </li>
+      </ul>
+    </div>
+
 
   </div>
   <script src="./js/jquery-3.4.1.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8a0854ee-3832-44b1-8ebc-5678c65bb992&lang=ru_RU"></script>
-  <script src="./js/map.js"></script>
+  <script src="./js/pagination.js"></script>
   <script src="./js/dropmenu.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/menu.js"></script>
@@ -945,5 +976,7 @@
   <script src="./js/slider.js"></script>
   <script src="./js/form.js"></script>
   <script src="./js/video.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8a0854ee-3832-44b1-8ebc-5678c65bb992&lang=ru_RU"></script>
+  <script src="./js/map.js"></script>
 </body>
 </html>

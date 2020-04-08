@@ -5,8 +5,8 @@ let onePageScroll = () =>{
   const points = document.querySelectorAll('.pagination__item');
   const dataScrollto = document.querySelectorAll('[data-scroll-to]');
   
-  // const md = new MobileDetect(window.navigator.userAgent);
-  // const isMobile = md.mobile();
+  const mobileDetect = new MobileDetect(window.navigator.userAgent);
+  const isMobile = mobileDetect.mobile();
 
   let inScroll = false;
   
@@ -62,6 +62,7 @@ let onePageScroll = () =>{
   }
 
   //фуекция работы с сенсорным экраном
+  if (isMobile) {
   // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
     $("body").swipe({
       swipe: (event, direction) => {
@@ -73,7 +74,8 @@ let onePageScroll = () =>{
         scrollToPage(scrollDirection);
       },
     });
-  
+  }
+
   // функция отработки нажатия стрелочек на клавиатуре
   function keyPush() {
     document.addEventListener('keydown', e => {

@@ -346,7 +346,8 @@ body {
   position: relative;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  color: #2f3234; }
+  color: #2f3234;
+  touch-action: none; }
 
 .wrapper {
   position: relative;

@@ -5,6 +5,9 @@ let onePageScroll = () =>{
   const points = document.querySelectorAll('.pagination__item');
   const dataScrollto = document.querySelectorAll('[data-scroll-to]');
   
+  // const md = new MobileDetect(window.navigator.userAgent);
+  // const isMobile = md.mobile();
+
   let inScroll = false;
   
   addNavigation();
@@ -57,10 +60,28 @@ let onePageScroll = () =>{
       scrollToPage(direct);
     })
   }
+
+  //фуекция работы с сенсорным экраном
+  // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+    $("body").swipe({
+      swipe: (event, direction) => {
+        let scrollDirection;
+  
+        if (direction === "up") scrollDirection = "up";
+        if (direction === "down") scrollDirection = "down";
+  
+        scrollToPage(scrollDirection);
+      },
+    });
   
   // функция отработки нажатия стрелочек на клавиатуре
   function keyPush() {
     document.addEventListener('keydown', e => {
+      const tagName = e.target.tagName.toLowerCase();
+      const userTypingInInputs = tagName === "input" || tagName === "textarea";
+
+    if (userTypingInInputs) return;
+
       switch (e.keyCode) {
         case 40:
         scrollToPage('up');
